@@ -17,6 +17,9 @@ const App = () => (
     <Header />
     
     <Jumbotron />
+    <Carousel />
+
+    
 
     <Footer />
   </div>

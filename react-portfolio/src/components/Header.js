@@ -1,5 +1,11 @@
 import React from 'react';
 import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+  
+  import {
   Collapse,
   Navbar,
   NavbarToggler,
@@ -11,6 +17,8 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+
+  
 
 export class Header extends React.Component {
   constructor(props) {
@@ -28,6 +36,7 @@ export class Header extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  
   render() {
     return (
       <div>
@@ -56,10 +65,7 @@ export class Header extends React.Component {
                   <DropdownItem>
                     Teacher Websites
                   </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    Reset
-                  </DropdownItem>
+                  
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
